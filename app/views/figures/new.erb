@@ -10,7 +10,7 @@
   <%@titles.each do |title|%>
   <p>
   <label for = "<%=title.name%>"><%=title.name%></label>
-  <input type = "checkbox" name = "figure[title_ids][]" id = "<%=title.name%>" value ="<%=title.id%>">
+  <input type = "checkbox" name = "figure[title_ids][]" id = "title_<%=title.id%>" value ="<%=title.id%>">
   </p>
   <%end%>
 </p>
