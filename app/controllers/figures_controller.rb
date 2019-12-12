@@ -8,7 +8,7 @@ class FiguresController < ApplicationController
   get '/figures/new' do
     @figures = Figure.all
     @titles = Title.all
-    #binding.pry
+    @landmarks = Landmark.all
     erb :'/figures/new'
   end
 
