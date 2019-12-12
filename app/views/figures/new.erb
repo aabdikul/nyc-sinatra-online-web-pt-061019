@@ -8,10 +8,9 @@
 <p>
   <h3>Titles:</h3>
   <%@titles.each do |title|%>
-  <p>
   <label for = "title_<%=title.id%>"><%=title.name%></label>
   <input type = "checkbox" name = "figure[title_ids][]" id = "title_<%=title.id%>" value ="<%=title.id%>">
-  </p>
+
   <%end%>
 </p>
 
@@ -23,8 +22,8 @@
 <p>
   <h3>Landmarks:</h3>
   <%@landmarks.each do |landmark|%>
-  <ul><label for = "landmark_<%=landmark.id%>"><%=landmark.name%></label>
-  <input type = "checkbox" name = "figure[landmark_ids][]" id = "landmark_<%=landmark.id%>" value ="<%=landmark.id%>"></ul>
+  <label for = "landmark_<%=landmark.id%>"><%=landmark.name%></label>
+  <input type = "checkbox" name = "figure[landmark_ids][]" id = "landmark_<%=landmark.id%>" value ="<%=landmark.id%>">
   <%end%>
 </p>
 
