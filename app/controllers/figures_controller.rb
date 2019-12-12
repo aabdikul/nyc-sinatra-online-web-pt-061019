@@ -15,7 +15,7 @@ class FiguresController < ApplicationController
   post '/figures' do
     @figure = Figure.create(params[:figure])
     #binding.pry
-    @figure.titles = Title.find_or_create_by(params[:title])
+    @figure.titles = Title.find_or_create_by(params["title"]["name"])
 
   end
 
