@@ -14,7 +14,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.create(params[:figure])
-    @landmark = Landmark.create(params[:landmark])
+    @figure.landmark = Landmark.create(params[:landmark])
     @title = Title.create(params[:title])
   end
 
