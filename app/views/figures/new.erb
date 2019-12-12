@@ -6,9 +6,9 @@
 <input type = "text" name = "figure[name]" id = "figure_name">
 
 <p>
-  <label>  </label>
-   <% Genre.all.each do |genre| %>
-     <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>">
+  <label>Titles:</label>
+   <% Title.all.each do |title| %>
+     <input id="<%= title.name %>" type="checkbox" name="titles[]" value="<%= title.id %>">
    <% end %>
 </p>
 
