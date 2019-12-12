@@ -17,7 +17,7 @@ class FiguresController < ApplicationController
     #binding.pry
   end
 
-  get '/figures/:id' do 
+  get '/figures/:id' do
 
   end
 
