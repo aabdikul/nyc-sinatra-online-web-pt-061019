@@ -16,7 +16,7 @@ class FiguresController < ApplicationController
     @figure = Figure.create(params[:figure])
     binding.pry
     @figure.landmarks = Landmark.create(params[:landmark])
-    @figure.title = Title.create(params[:title])
+    @figure.titles = Title.create(params[:title])
   end
 
   get '/figures/:id' do
