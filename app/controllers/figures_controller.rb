@@ -28,6 +28,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
+    @titles = Title.all
     @figure = Figure.find(params[:id])
     @figure.update(params[:figure])
     redirect to "/figures/#{@figure.id}"
