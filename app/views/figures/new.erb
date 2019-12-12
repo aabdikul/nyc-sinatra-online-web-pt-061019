@@ -9,6 +9,7 @@
   <label>Titles:</label>
   <%@titles.each do |title|%>
   <p>
+  <label for = "<%=title.name%>"><%=title.name%></label>
   <input type = "checkbox" name = "figure[title_ids][]" id = "<%=title.name%>" value ="<%=title.id%>">
   </p>
   <%end%>
