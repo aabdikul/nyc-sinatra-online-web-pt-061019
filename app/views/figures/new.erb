@@ -6,10 +6,7 @@
 <input type = "text" name = "figure[name]" id = "figure_name">
 
 <p>
-  <label>Titles:</label>
-   <% Title.all.each do |title| %>
-     <input id="title_#{title.id}" type="checkbox" name="titles[]" value="<%= title.id %>">
-   <% end %>
+  <label for = "">Titles:</label>
 </p>
 
 <p>
