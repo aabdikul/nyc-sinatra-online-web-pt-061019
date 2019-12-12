@@ -14,8 +14,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.create(params[:figure])
-    binding.pry
-    #@figure.titles =
+    @figure.titles << Title.create(params[:title])
   end
 
   get '/figures/:id' do
