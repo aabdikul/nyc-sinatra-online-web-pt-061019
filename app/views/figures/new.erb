@@ -8,7 +8,9 @@
 <p>
   <label>Titles:</label>
   <%@titles.each do |title|%>
+  <p>
   <input type = "checkbox" name = "figure[title_ids][]" id = "<%=title.name%>" value ="<%=title.id%>">
+</p>
   <%end%>
 </p>
 
