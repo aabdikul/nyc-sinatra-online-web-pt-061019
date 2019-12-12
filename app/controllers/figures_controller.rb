@@ -14,7 +14,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.create(params[:figure])
-    binding.pry
+    #binding.pry
     @figure.titles = (params[:title])
 
   end
