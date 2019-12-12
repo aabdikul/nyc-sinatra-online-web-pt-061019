@@ -10,7 +10,8 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    @title = Title.create(params[:title])
+    @figure = Figure.create(params[:figure])
+
   end
 
 end
