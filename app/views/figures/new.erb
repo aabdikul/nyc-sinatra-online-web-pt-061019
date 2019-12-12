@@ -23,8 +23,8 @@
 <p>
   <h3>Landmarks:</h3>
   <%@landmarks.each do |landmark|%>
-  <label for = "landmark_<%=landmark.id%>"><%=landmark.name%></label>
-  <input type = "checkbox" name = "figure[landmark_ids][]" id = "landmark_<%=landmark.id%>" value ="<%=landmark.id%>">
+  <ul><label for = "landmark_<%=landmark.id%>"><%=landmark.name%></label>
+  <input type = "checkbox" name = "figure[landmark_ids][]" id = "landmark_<%=landmark.id%>" value ="<%=landmark.id%>"></ul>
   <%end%>
 </p>
 
