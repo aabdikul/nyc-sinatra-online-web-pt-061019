@@ -6,7 +6,7 @@
 <input type = "text" name = "figure[name]" id = "figure_name">
 
 <p>
-  <label for = "whatever">Titles:</label>
+  <label for = "(titles)">Titles:</label>
   <%@titles.each do |title|%>
   <input type = "checkbox" name = "figure[title_ids][]" id = "<%=title.name%>" value ="<%=title.id%>">
   <%end%>
